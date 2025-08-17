@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: user-service
+  # Отключаем Spring Cloud Config, если Config Server не используется
+  cloud:
+    config:
+      enabled: false
+      import-check:
+        enabled: false
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
