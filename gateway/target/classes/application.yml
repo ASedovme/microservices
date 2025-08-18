@@ -14,11 +14,11 @@ spring:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/users/**
+            - Path=/api/users/**
         - id: company-service
           uri: lb://company-service
           predicates:
-            - Path=/companies/**
+            - Path=/api/companies/**
 
 eureka:
   client:
